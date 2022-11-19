@@ -8,7 +8,7 @@ entries:
         entries:
       - title: Hello! I'm John Trigg, but I go by Jack!
 
-      title: \&curl github.com
+      - title: \&curl github.com
       - title: Here's my Github!
         url: https://github.com/johntrigg
 
