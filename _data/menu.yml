@@ -4,7 +4,7 @@
 entries:
   - title: aboutme.sh
     entries:
-      title: $whoami
+      - title: $whoami
         entries:
       - title: Hello! I'm John Trigg, but I go by Jack!
 
