@@ -6,7 +6,7 @@ entries:
     entries:
       - title: $whoami
         entries:
-      - title: Hello! I'm John Trigg, but I go by Jack!
+        - title: Hello! I'm John Trigg, but I go by Jack!
 
       - title: \&curl github.com
       - title: Here's my Github!
