@@ -2,7 +2,7 @@ title: Jack Trigg's Portfolio # name of the site
 author: John Trigg # name of site's author
 email: jtrigg@usf.edu # email of site's author
 url: https://johntrigg.github.io # root address of the site
-baseurl: "/no-style-please" # subpath of the site, e.g. "/blog" (leave it blank "" if you're site shouldn't use a subpath)
+baseurl: "" # subpath of the site, e.g. "/blog" (leave it blank "" if you're site shouldn't use a subpath)
 description: > # description of the site (multiple lines allowed)
   Hi! I'm John Trigg, but I go by Jack. Here's my website!
 
