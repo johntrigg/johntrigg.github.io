@@ -2,9 +2,13 @@
 # https://github.com/riggraz/no-style-please#customize-the-menu
 
 entries:
-  - title: aboutme.txt
+  - title: aboutme.sh
     entries:
-      - title: Hello! I'm John Trigg, but I go by Jack.
+      title: $whoami
+        entries:
+      - title: Hello! I'm John Trigg, but I go by Jack!
+
+      title: &curl github.com
       - title: Here's my Github.
         url: https://github.com/johntrigg
 
@@ -15,13 +19,20 @@ entries:
       show_more_text: See archive...
       show_more_url: archive.html
 
-  - title: posts by category
+  - title: Writeups
     post_list:
       category: example2
       show_more: true
       show_more_text: See more posts...
       show_more_url: example2-archive.html
   
+    - title: Aspirations & Goals
+    post_list:
+      category: example2
+      show_more: true
+      show_more_text: See more posts...
+      show_more_url: example2-archive.html
+
   - title: another list
     entries:
       - title: with subitems
