@@ -1,6 +1,8 @@
 ---
 layout: post
-category: blog-posts
+category: writeups
 ---
 
-There's a scene in 30 Rock. One of the character says to the other "What a week, huh?". The other character answers simply with: "It's Wednesday".
+Almanac is a binary reverse-engineering challenge that was hosted at HTB's CTF at USF during the fall 2022 semester. We are given a Linux ELF executable, and unsurprisingly, we are meant to extract a flag from it.
+
+To begin, I imported the binary file into Ghidra.
