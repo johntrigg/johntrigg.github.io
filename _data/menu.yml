@@ -17,15 +17,10 @@ entries:
       show_more_text: See archive...
       show_more_url: archive.html
 
-  - title: posts by category
-    post_list:
-      category: example2
-      show_more: true
-      show_more_text: See more posts...
-      show_more_url: example2-archive.html
 
   - title: Writeups
     post_list:
+      limit: 0
       category: writeups
       show_more: true
       show_more_text: See more posts...
@@ -33,7 +28,15 @@ entries:
 
   - title: Blog Posts
     post_list:
-      category: blog-posts
+      limit: 0
+      category: blogs
+      show_more: true
+      show_more_text: See more posts...
+      show_more_url: example2-archive.html
+
+  - title: posts by category
+    post_list:
+      category: example2
       show_more: true
       show_more_text: See more posts...
       show_more_url: example2-archive.html
