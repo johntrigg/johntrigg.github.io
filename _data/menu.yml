@@ -9,10 +9,12 @@ entries:
           - title: Hello! My name is John Trigg, but I go by Jack!
           - title: I'm a cybersecurity student at the University of South Florida.
           - title: I have a huge interest in all things computer security, and love playing in CTF's!
-
+          - title: Check out some of my projects (like this website and CTF automation) on my <a href='https://github.com/johntrigg/'>Github!</a>
+  
+  
   - title: all posts
     post_list:
-      limit: 5
+      limit: 100
       show_more: true
       show_more_text: See archive...
       show_more_url: archive.html
@@ -20,18 +22,18 @@ entries:
 
   - title: Writeups
     post_list:
-      limit: 0
+      limit: 10
       category: writeups
       show_more: true
-      show_more_text: See more posts...
+      show_more_text: View all writeups ...
       show_more_url: example2-archive.html
 
   - title: Blog Posts
     post_list:
-      limit: 0
+      limit: 10
       category: blogs
       show_more: true
-      show_more_text: See more posts...
+      show_more_text: View all blog posts ...
       show_more_url: example2-archive.html
 
   - title: posts by category
