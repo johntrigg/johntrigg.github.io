@@ -95,7 +95,7 @@ The `index.md` page should use layout `home`, which is the layout that displays 
 Another thing you can do to customize the index page is show the description of your blog between the title and the menu. To do this, just edit `_config.yml` and change `theme_config.show_description` to `true`.
 
 ### Pro tips
-
+-------------------------------------------------
 #### Dark mode for images
 
 This theme provides dark mode by inverting all colors of light mode throught the CSS `invert()` function. This approach would also invert the color of all images, but, since this is not the behaviour one would expect, images are not inverted by default.
