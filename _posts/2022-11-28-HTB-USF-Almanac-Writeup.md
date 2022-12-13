@@ -6,7 +6,7 @@ category: writeups
 Almanac is a binary reverse-engineering challenge that was hosted at HTB's CTF at USF during the fall 2022 semester. We are given a Linux ELF executable, and unsurprisingly, we are meant to extract a flag from it.
 
 To begin, I imported the binary file into Ghidra. I found the main function, and inspected it.
-!(https://github.com/johntrigg/johntrigg.github.io/blob/master/assets/images/writeups/almanac/almanac-writeup-screenshot-1.PNG?raw=true)
+![Almanac Writeup Screenshot 1](https://github.com/johntrigg/johntrigg.github.io/blob/master/assets/images/writeups/almanac/almanac-writeup-screenshot-1.PNG?raw=true)
 
 Let's take a look at what the program actually does. It takes some values from the user, and uses those to drive the program. One input is a year, the other is the type of sport.
 
