@@ -16,6 +16,6 @@ So, Converting 0x7a69 from hex to decimal gives us the value.
 !(/assets/images/writeups/almanac/almanac-writeup-screenshot-1.PNG)
 
 Let's plug it into the program (specifically as the local_14 variable), and see what that special functions does, exactly.
-!(https://raw.githubusercontent.com/johntrigg/johntrigg.github.io/tree/master/assets/images/writeups/almanac/almanac-writeup-screenshot-3.PNG)
+![Almanac Writeup Screenshot 3](https://raw.githubusercontent.com/johntrigg/johntrigg.github.io/tree/master/assets/images/writeups/almanac/almanac-writeup-screenshot-3.PNG)
 
 Well, there we are. That's a flag. Thanks for reading!
