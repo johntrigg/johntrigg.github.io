@@ -13,7 +13,7 @@ Let's take a look at what the program actually does. It takes some values from t
 Hmm, what an unusual check. If the local_14 variable corresponds to a value of 0x7169 in hex, it calls some unusual function. We know that local_14 corresponds to the first value that the program takes from the user (the year). 
 
 So, Converting 0x7a69 from hex to decimal gives us the value. 
-!(/assets/images/writeups/almanac/almanac-writeup-screenshot-1.PNG)
+![Almanac Writeup Screenshot 2](/assets/images/writeups/almanac/almanac-writeup-screenshot-1.PNG)
 
 Let's plug it into the program (specifically as the local_14 variable), and see what that special functions does, exactly.
 ![Almanac Writeup Screenshot 3](https://raw.githubusercontent.com/johntrigg/johntrigg.github.io/tree/master/assets/images/writeups/almanac/almanac-writeup-screenshot-3.PNG)
