@@ -24,7 +24,15 @@ entries:
       show_more: true
       show_more_text: View all blog posts ...
       show_more_url: example2-archive.html
-  
+
+  - title: Cheat Sheets
+    post_list:
+      limit: 10
+      category: cheatsheets
+      show_more: true
+      show_more_text: View all blog posts ...
+      show_more_url: example2-archive.html
+
   - title: all posts
     post_list:
       limit: 100
