@@ -35,6 +35,18 @@ And add this line to your Jekyll site's `_config.yml`:
 theme: no-style-please
 ```
 
+
+## Make File
+
+
+The make file should read as follows=, if you need to make one.
+```
+dev:
+	bundle exec jekyll serve
+
+install: 
+	bundle install
+```
 And then execute:
 
     $ bundle
