@@ -7,20 +7,26 @@ This is a general repository/directory of cheatsheets and resources I've found g
 
 # Personal Pentesting Cheatsheet
 
-https://github.com/johntrigg/attack-defend-cheatsheet/blob/main/cheat-sheet.md
+<a href='https://github.com/johntrigg/attack-defend-cheatsheet/blob/main/cheat-sheet.md'>Personal Pentesting Cheatsheet</a>
+
 
 # HackTricks
 
-https://book.hacktricks.xyz/welcome/readme
+<a href='https://book.hacktricks.xyz/welcome/readme'>HackTricks.xyz</a>
+
 
 # General Red Teaming Notes
 
-https://www.ired.team/
+<a href='https://www.ired.team/'>ired.team!</a>
+
 
 # SMB
 
-https://www.willhackforsushi.com/sec504/SMB-Access-from-Linux.pdf
+<a href='https://www.willhackforsushi.com/sec504/SMB-Access-from-Linux.pdf'>willhackforsushi.com!</a>
+
 
 # Pentest Book
 
-https://pentestbook.six2dez.com/enumeration/ports
+<a href='https://pentestbook.six2dez.com/enumeration/ports'>pentestbook.six2dez.com</a>
+
+
