@@ -8,6 +8,7 @@ entries:
           - title: I'm a cybersecurity student at the University of South Florida.
           - title: I have a huge interest in all things computer security, and love playing in CTFs!
           - title: Check out some of my projects (like this website and CTF automation) on my <a href='https://github.com/johntrigg/'>Github!</a>
+          - title: Here's my <a href='/assets/resumes/jtrigg-resume-stripped.pdf'>resume</a>!
 
   - title: Writeups
     post_list:
