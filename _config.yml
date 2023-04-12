@@ -6,7 +6,7 @@ baseurl: "" # subpath of the site, e.g. "/blog" (leave it blank "" if you're sit
 description: > # description of the site (multiple lines allowed)
   Hi! I'm John Trigg, but I go by Jack. Here's my website!
 
-permalink: /:slug.html
+permalink: /:slug
 
 favicon: "logo.png" # name+extension of favicon (which must be put on the root folder)
 # goat_counter: "yoursitename" # put your GoatCounter name if you want to use GoatCounter analytics
@@ -18,6 +18,7 @@ theme_config:
   back_home_text: ".." # customize text for homepage link in post layout
   date_format: "%Y-%m-%d" # customize how date is formatted
   show_description: false # show blog description in home page
+
 
 sass:
   style: :compressed
