@@ -34,6 +34,12 @@ entries:
       show_more_text: View all blog posts ...
       show_more_url: example2-archive.html
 
+  - title: $ goals
+    entries:
+      - title: $ certifications
+        entries:
+          - title: SEC+ -> CBBH -> CPTS Course Material -> PNPT Exam -> CPTS -> OSCP
+
   - title: all posts
     post_list:
       limit: 100
