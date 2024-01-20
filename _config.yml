@@ -1,5 +1,5 @@
-title: John 'Jack' Trigg's Website # name of the site
-author: John Trigg # name of site's author
+title: Jack Trigg's Website # name of the site
+author: Jack Trigg # name of site's author
 email: jtrigg@usf.edu # email of site's author
 url: https://jacktrigg.com # root address of the site
 baseurl: "" # subpath of the site, e.g. "/blog" (leave it blank "" if you're site shouldn't use a subpath)

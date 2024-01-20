@@ -46,3 +46,146 @@ entries:
           - title: Hello! My name is John Trigg, but I go by Jack!
           - title: I'm a cybersecurity student at the University of South Florida.
           - title: I have a huge interest in all things computer security, and love playing in CTF's!
+
+          ---
+layout: post
+category: cheatsheets
+---
+
+This is a general repository/directory of cheatsheets and resources I've found generally useful. I hope they help you as much as they helped me.
+
+# GitHub Links
+
+## Personal Pentesting Cheatsheet
+
+<a href='https://github.com/johntrigg/attack-defend-cheatsheet/blob/main/cheat-sheet.md'>KOTH/Pentesting Cheatsheet</a>
+
+## RSA CTF Tool
+
+<a href='https://github.com/RsaCtfTool/RsaCtfTool'>RSA CTF Tool</a>
+
+## Awesome CTF
+
+<a href='https://github.com/apsdehal/awesome-ctf'>Awesome CTF</a>
+
+## Awesome Forensics
+
+<a href='https://github.com/cugu/awesome-forensics'>Awesome Forensics</a>
+
+# Useful Websites
+
+
+
+## Steganography Helper
+
+<a href='https://0xrick.github.io/lists/stego/'>Stego List</a>
+
+## HackTricks
+
+<a href='https://book.hacktricks.xyz/welcome/readme'>hacktricks.xyz</a>
+
+
+# General Red Teaming Notes
+
+<a href='https://www.ired.team/'>ired.team</a>
+
+
+## SMB
+
+<a href='https://www.willhackforsushi.com/sec504/SMB-Access-from-Linux.pdf'>willhackforsushi.com!</a>
+
+
+## Pentest Book
+
+<a href='https://pentestbook.six2dez.com/enumeration/ports'>pentestbook.six2dez.com</a>
+
+# Todo
+
+<a href='https://github.com/b4rtik/SharpKatz'>Learn Sharpkatz</a>
+
+## Good Wordlists
+
+
+<a href='https://github.com/danielmiessler/SecLists/blob/master/Passwords/Default-Credentials/tomcat-betterdefaultpasslist.txt'>Seclists Password</a>
+
+<a href='https://github.com/ihebski/DefaultCreds-cheat-sheet'>Default Creds List</a>
+
+
+
+
+
+---
+layout: post
+category: writeups
+---
+
+
+```Question 1: "What is the likely IPv4 address of someone from the Po1s0n1vy group scanning imreallynotbatman.com for web application vulnerabilities?"```
+
+To begin, we start with a query of our website, to see if we can get a starting point.
+
+![Boss Writeup Screenshot 1](/assets/images/writeups/boss/boss-screenshot-1.PNG)
+
+After some scrolling, we see a very interesting request. It is from an external public IP (40.80.148.42) to our internal private IP(192.168.250.70). This in and of itself isn't very interesting - web servers are supposed to handle outside traffic.
+
+However, we see something that should arise suspicion. The user agent is "Acunetix Web Vulnerability Scanner". This is highly abnormal. Since we didn't authorize this vulnerability scan, we can be fairly confident that this is the threat actor's IPv4 address (40.80.148.42).
+
+```Question 2: "What company created the web vulnerability scanner used by Po1s0n1vy (the threat actor)?"```
+
+The answer to this is in our previous screenshot. The threat actor used a vulnerability scanner created by Acunetix.
+
+```Question 3: "What content management system is imreallynotbatman.com likely using?"```
+
+This too, is in the previous screenshot. We see the name "Joomla" when file paths are references. A quick search reveals Joomla to be a CMS (content management system).
+
+```Question 4: "What is the name of the file that defaced the imreallynotbatman.com website? Please submit only the name of the file with extension?"```
+
+
+
+So, how do we figure this out? The website would be updated via the internal IP, and we can filter requests by the URL accessed. So, we want a query that checks what requests were made with a client ip (c_ip) of our web server, and look at the URL statistics. 
+
+![Boss Writeup Screenshot 2](/assets/images/writeups/boss/boss-screenshot-2.PNG)
+
+Most of the files don't arouse suspicion. However, that jpeg with an unusual name arouses some suspision, and is our answer.
+
+```Question 5: This attack used dynamic DNS to resolve to the malicious IP. What fully qualified domain name (FQDN) is associated with this attack?```
+
+This is in the above screenshot. We see a very unusual website where the image was hosted - "prankglassinebracket.jumpingcrab.com"
+
+```Question 6: What IPv4 address has Po1s0n1vy tied to domains that are pre-staged to attack Wayne Enterprises?```
+
+![Boss Writeup Screenshot 3](/assets/images/writeups/boss/boss-screenshot-3.PNG)
+
+We simply run a query for the malicious domain name. The relevant event has two IPs. One of them is a private internal IP, and we can assume the other must be the attacker's IP associated with their malicious domain (22.22.63.114).
+
+```Question 7: Based on the data gathered from this attack and common open source intelligence sources for domain names, what is the email address that is most likely associated with Po1s0n1vy APT group?```
+
+![Boss Writeup Screenshot 4](/assets/images/writeups/boss/boss-screenshot-4.PNG)
+
+We use a website to lookup information about domain names. In this case, I tried "whois.com" and "whoxy.com". Whoxy.com gave us the information we were looking for. Whoxy had multiple records, and the second one I tried was the correct answer.
+
+https://www.whoxy.com/po1s0n1vy.com
+---
+layout: post
+category: writeups
+---
+
+My team, Protosec, had the pleasure of attending HackSpaceCon this weekend. It was a crazy busy weekend for us, we secured high placing in a variety of CTFs (1st in USF HackTheBox CTF, 2nd and 3rd in Dark Wolf CTF, 1st and 2nd in Periwinkle CTF, and 4th in MetaCTF). I'd like to thank the organizers of these CTFs for making this even possible, and for making this weekend a lot of fun.
+
+I think the most interesting challenge that I did over these past few days was one of the MetaCTF challenges, Telephony. 
+
+The objective was to place a long-range call for free, to a certain number, that would give you the flag. However, since it was a long-range call, it would not go through for free (and you simply couldn't just pay for it).
+
+The MetaCTF desk provided a flyer to help get started with the challenge.
+
+After some research, we learn that Blue Boxes were used to place free phone calls. The way these worked was by playing tones of a certain frequency into a telephone reciever. These tones corresponded to commands, and certain numbers. When you dial a phone number, you hear certain tones. MetaCTF provided a blue box on their website.
+
+IE, playing frequency A into the reciever is functionally equivalent to pressing the number X. This is a constant relationship that doesn't change. Additionally, there are certain commands that correspond to certain frequencies. Playing a 2600Hz tone, for example, puts the phone into stand-by mode to recieve commands.
+
+Now, we have our problem statement: We use the phreak exploit (via the provided blue box) to "take over" the teleboard switch, so we can place the call we want.
+
+My exploit chain was this:
+
+Play 2600hz tone (Seize the trunk, so we can use the command frequencies), play a KP (key pulse, used to indicate the beginning of placing a number), play the corresponding frequencies of the last 4 digits of the target phone number, and play the ST (stop) tone to indicate we are finished.
+
+This works after a try or two, and we obtain the flag.
