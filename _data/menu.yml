@@ -21,7 +21,7 @@ entries:
     entries:
       - title: $ certifications
         entries:
-          - title: SEC+ -> CBBH -> CPTS Course Material -> PNPT Exam -> CPTS -> OSCP
+          - title: OSCP -> CBBH -> CPTS -> OSWE -> OSEP
 
   - title: all posts
     post_list:
