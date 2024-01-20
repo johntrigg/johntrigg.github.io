@@ -4,22 +4,22 @@ category: writeups
 ---
 # Introduction
 
-The DOE 2023 Cyberforce Competition, held an hour from Chicago in the depths of a biting winter, turned out to be a remarkable showcase of our team's cybersecurity prowess. Against a backdrop of 106 teams, we achieved an impressive fifth place, a feat that fills me with immense pride.
-# Key Advantages and Team Strengths
+In the vibrant autumn of 2023, I had the thrilling opportunity to participate in the South East Collegiate Penetration Testing Competition (SECPTC) held in Augusta, Georgia. This event brought together bright minds from institutions like UCF and UF, creating an arena of formidable competition.
+# Proposal Phase and Acceptance
 
-Our team's success hinged on several key factors: the robustness of our website, the thoroughness of our security documentation, and our exemplary performance during red team engagements. Our website, in particular, stood out as a testament to our technical skill and attention to detail.
-# Strategic Approaches
+As the primary writer of our team, I spearheaded the proposal phase. The joy and anticipation when our proposal was accepted were unparalleled. This marked the beginning of an exciting journey, filled with preparation and strategy formulation.
+# Competition Overview
 
-One of our strategic advantages was the focus on setting up comprehensive visibility on our endpoints. This approach allowed us to track every move of the red team, understanding their actions command by command, second by second. This level of insight was crucial in countering their strategies effectively.
-# Personal Contributions
+SECPTC 2023 was structured to simulate real-world penetration testing scenarios. Competing in such an environment against other top regional teams presented both a challenge and a learning opportunity.
+# Role as Co-Captain
 
-My role in this success story was multifaceted. I took the lead in crafting detailed security documentation, which involved a deep analysis of our network from both technical and security perspectives. Alongside the team captain, I was involved in the intricate task of upgrading the website, ensuring its integration with ICS/SCADA data from solar panels and batteries.
-# Reflections and Lessons Learned
+Serving as the co-captain, my role extended beyond technical expertise to include team leadership and strategy. Orchestrating our team's efforts and ensuring smooth communication were my primary responsibilities, contributing significantly to our overall performance.
+# The Unique Challenge of Staying In Character
 
-While we are incredibly proud of our fifth-place finish, hindsight has revealed areas where we could improve. This realization is not a setback but a stepping stone for future growth and success.
-# Looking Forward
+One of the most intriguing aspects of SECPTC was the requirement to stay in character as if we were on an actual penetration test. This added a layer of complexity, testing not only our technical skills but also our ability to adapt to real-world scenarios.
+# Reflections on Performance and Enjoyment
 
-With the lessons learned this year, our sights are firmly set on placing in the top three in the next competition. We have identified key areas for improvement and are eager to implement strategies that will elevate our performance.
+While we didn’t secure a top-three placement, our performance was something we all took pride in. The competition was not just a test of our skills but also a profoundly enjoyable experience, filled with moments of learning and camaraderie.
 # Conclusion
 
-The DOE 2023 Cyberforce Competition was not just a competition; it was a journey of learning, teamwork, and achievement. It has instilled in us a spirit of continuous improvement and an unwavering determination to reach new heights in the field of cybersecurity.
+SECPTC 2023 was a remarkable event that combined the thrill of competition with the joy of learning. It was an experience that enriched us professionally and personally, leaving us eager for future challenges in the world of cybersecurity.
