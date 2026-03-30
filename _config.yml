@@ -1,0 +1,22 @@
+title: Your Name
+description: Developer & writer
+url: "https://johntrigg.github.io"
+repository: johntrigg/johntrigg.github.io   # 👈 add this line
+author:
+  name: Your Name
+  email: you@example.com
+  github: johntrigg
+
+permalink: /blog/:year/:month/:day/:title/
+markdown: kramdown
+highlighter: rouge
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
