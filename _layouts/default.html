@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <link rel="stylesheet" href="/assets/css/styles.css" />
+  {% feed_meta %}
+  {% seo %}
+</head>
+<body>
+  <nav>
+    <a class="nav-title" href="/">{{ site.title }}</a>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/blog">Blog</a></li>
+      <li><a href="/portfolio">Portfolio</a></li>
+    </ul>
+  </nav>
+  <main>
+    {{ content }}
+  </main>
+  <footer>
+    <p>{{ site.title }} &mdash; built with Jekyll &amp; the Dracula theme</p>
+  </footer>
+</body>
+</html>

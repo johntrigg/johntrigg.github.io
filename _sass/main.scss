@@ -1,0 +1,84 @@
+@import "dracula";
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background-color: $bg;
+  color: $fg;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+a {
+  color: $purple;
+  text-decoration: none;
+  &:hover { color: $pink; }
+}
+
+h1, h2, h3, h4 {
+  color: $purple;
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+}
+
+p { margin-bottom: 1rem; }
+
+code {
+  font-family: 'Cascadia Code', 'Fira Code', monospace;
+  background: $surface;
+  color: $cyan;
+  padding: 0.1em 0.4em;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+pre {
+  background: $surface;
+  padding: 1rem;
+  border-radius: 8px;
+  overflow-x: auto;
+  margin-bottom: 1rem;
+  code { background: none; padding: 0; }
+}
+
+nav {
+  background: $surface;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid $purple;
+
+  .nav-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: $pink;
+    &:hover { color: $purple; }
+  }
+
+  ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    li a {
+      color: $fg;
+      font-size: 0.95rem;
+      &:hover { color: $cyan; }
+    }
+  }
+}
+
+main {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  color: $comment;
+  font-size: 0.85rem;
+  border-top: 1px solid $surface;
+}
