@@ -1,9 +1,9 @@
-title: Your Name
+title: John Trigg
 description: Developer & writer
 url: "https://johntrigg.github.io"
-repository: johntrigg/johntrigg.github.io   # 👈 add this line
+repository: johntrigg/johntrigg.github.io   
 author:
-  name: Your Name
+  name: John Trigg
   email: you@example.com
   github: johntrigg
 
