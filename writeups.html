@@ -1,0 +1,14 @@
+---
+layout: default
+title: Writeups
+---
+<h1>Writeups</h1>
+<ul class="post-list">
+  {% assign all_writeups = site.writeups | sort: 'date' | reverse %}
+  {% for writeup in all_writeups %}
+  <li>
+    <a href="{{ writeup.url }}">{{ writeup.title }}</a>
+    <span class="post-date">{{ writeup.date | date: "%b %d, %Y" }}</span>
+  </li>
+  {% endfor %}
+</ul>

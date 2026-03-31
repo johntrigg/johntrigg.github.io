@@ -1,10 +1,10 @@
-title: John Trigg
+title: Jack Trigg
 description: Developer & writer
 url: "https://johntrigg.github.io"
-repository: johntrigg/johntrigg.github.io   
+repository: johntrigg/johntrigg.github.io
 author:
-  name: John Trigg
-  email: you@example.com
+  name: Jack Trigg
+  email: jacktrigg00@gmail.com
   github: johntrigg
 
 permalink: /blog/:year/:month/:day/:title/
@@ -15,8 +15,26 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - README.md
-  
 
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+
+collections:
+  writeups:
+    output: true
+    permalink: /writeups/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      category: blog
+  - scope:
+      path: ""
+      type: writeups
+    values:
+      layout: post
+      category: writeup

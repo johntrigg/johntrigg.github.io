@@ -82,3 +82,85 @@ footer {
   font-size: 0.85rem;
   border-top: 1px solid $surface;
 }
+
+.hero {
+  margin-bottom: 3rem;
+  h1 { font-size: 2.5rem; color: $pink; }
+  .bio { color: $comment; font-size: 1.1rem; margin-top: 0.5rem; }
+}
+
+.home-section {
+  margin-bottom: 3rem;
+  h2 { color: $purple; border-bottom: 1px solid $surface; padding-bottom: 0.4rem; margin-bottom: 1rem; }
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 1rem;
+  a { color: $comment; font-size: 0.85rem; &:hover { color: $cyan; } }
+}
+
+.post-list {
+  list-style: none;
+  li {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid $surface;
+    a { color: $fg; &:hover { color: $pink; } }
+  }
+}
+
+.post-date {
+  color: $comment;
+  font-size: 0.85rem;
+  white-space: nowrap;
+  margin-left: 1rem;
+}
+
+body {
+  background-color: $bg;
+  color: $fg;
+  font-family: 'Cascadia Code', 'Fira Code', 'Consolas', monospace;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+.goals {
+  margin-bottom: 3rem;
+  h2 { color: $purple; border-bottom: 1px solid $surface; padding-bottom: 0.4rem; margin-bottom: 1rem; }
+}
+
+.goals-track {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.goal {
+  background: $surface;
+  color: $comment;
+  padding: 0.35rem 0.85rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  border: 1px solid $comment;
+
+  &.completed {
+    color: $green;
+    border-color: $green;
+  }
+
+  &.active {
+    color: $pink;
+    border-color: $pink;
+    font-weight: 700;
+  }
+}
+
+.goal-arrow {
+  color: $comment;
+  font-size: 1rem;
+}

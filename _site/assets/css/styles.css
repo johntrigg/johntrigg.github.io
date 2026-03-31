@@ -76,3 +76,91 @@ footer {
   color: #6272a4;
   font-size: 0.85rem;
   border-top: 1px solid #44475a; }
+
+.hero {
+  margin-bottom: 3rem; }
+  .hero h1 {
+    font-size: 2.5rem;
+    color: #ff79c6; }
+  .hero .bio {
+    color: #6272a4;
+    font-size: 1.1rem;
+    margin-top: 0.5rem; }
+
+.home-section {
+  margin-bottom: 3rem; }
+  .home-section h2 {
+    color: #bd93f9;
+    border-bottom: 1px solid #44475a;
+    padding-bottom: 0.4rem;
+    margin-bottom: 1rem; }
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 1rem; }
+  .section-header a {
+    color: #6272a4;
+    font-size: 0.85rem; }
+    .section-header a:hover {
+      color: #8be9fd; }
+
+.post-list {
+  list-style: none; }
+  .post-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #44475a; }
+    .post-list li a {
+      color: #f8f8f2; }
+      .post-list li a:hover {
+        color: #ff79c6; }
+
+.post-date {
+  color: #6272a4;
+  font-size: 0.85rem;
+  white-space: nowrap;
+  margin-left: 1rem; }
+
+body {
+  background-color: #282a36;
+  color: #f8f8f2;
+  font-family: 'Cascadia Code', 'Fira Code', 'Consolas', monospace;
+  font-size: 1rem;
+  line-height: 1.7; }
+
+.goals {
+  margin-bottom: 3rem; }
+  .goals h2 {
+    color: #bd93f9;
+    border-bottom: 1px solid #44475a;
+    padding-bottom: 0.4rem;
+    margin-bottom: 1rem; }
+
+.goals-track {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem; }
+
+.goal {
+  background: #44475a;
+  color: #6272a4;
+  padding: 0.35rem 0.85rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  border: 1px solid #6272a4; }
+  .goal.completed {
+    color: #50fa7b;
+    border-color: #50fa7b; }
+  .goal.active {
+    color: #ff79c6;
+    border-color: #ff79c6;
+    font-weight: 700; }
+
+.goal-arrow {
+  color: #6272a4;
+  font-size: 1rem; }
