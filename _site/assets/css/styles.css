@@ -14,7 +14,7 @@ a {
   color: #bd93f9;
   text-decoration: none; }
   a:hover {
-    color: #ff79c6; }
+    color: #8be9fd; }
 
 h1, h2, h3, h4 {
   color: #bd93f9;
@@ -52,7 +52,7 @@ nav {
   nav .nav-title {
     font-size: 1.2rem;
     font-weight: 700;
-    color: #ff79c6; }
+    color: #8be9fd; }
     nav .nav-title:hover {
       color: #bd93f9; }
   nav ul {
@@ -81,7 +81,7 @@ footer {
   margin-bottom: 3rem; }
   .hero h1 {
     font-size: 2.5rem;
-    color: #ff79c6; }
+    color: #8be9fd; }
   .hero .bio {
     color: #6272a4;
     font-size: 1.1rem;
@@ -117,7 +117,7 @@ footer {
     .post-list li a {
       color: #f8f8f2; }
       .post-list li a:hover {
-        color: #ff79c6; }
+        color: #8be9fd; }
 
 .post-date {
   color: #6272a4;
@@ -157,8 +157,8 @@ body {
     color: #50fa7b;
     border-color: #50fa7b; }
   .goal.active {
-    color: #ff79c6;
-    border-color: #ff79c6;
+    color: #8be9fd;
+    border-color: #8be9fd;
     font-weight: 700; }
 
 .goal-arrow {

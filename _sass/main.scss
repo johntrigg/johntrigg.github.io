@@ -13,7 +13,7 @@ body {
 a {
   color: $purple;
   text-decoration: none;
-  &:hover { color: $pink; }
+  &:hover { color: $cyan; }
 }
 
 h1, h2, h3, h4 {
@@ -53,7 +53,7 @@ nav {
   .nav-title {
     font-size: 1.2rem;
     font-weight: 700;
-    color: $pink;
+    color: $cyan;
     &:hover { color: $purple; }
   }
 
@@ -85,7 +85,7 @@ footer {
 
 .hero {
   margin-bottom: 3rem;
-  h1 { font-size: 2.5rem; color: $pink; }
+  h1 { font-size: 2.5rem; color: $cyan; }
   .bio { color: $comment; font-size: 1.1rem; margin-top: 0.5rem; }
 }
 
@@ -110,7 +110,7 @@ footer {
     align-items: baseline;
     padding: 0.5rem 0;
     border-bottom: 1px solid $surface;
-    a { color: $fg; &:hover { color: $pink; } }
+    a { color: $fg; &:hover { color: $cyan; } }
   }
 }
 
@@ -154,8 +154,8 @@ body {
   }
 
   &.active {
-    color: $pink;
-    border-color: $pink;
+    color: $cyan;
+    border-color: $cyan;
     font-weight: 700;
   }
 }
